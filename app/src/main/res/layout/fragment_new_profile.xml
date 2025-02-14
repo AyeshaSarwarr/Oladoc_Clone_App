@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/fragment_add_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".NewProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Profile"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_50sdp"/>
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:hint="Enter name"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editTextRelationship"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:hint="Relationship" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:hint="Mobile number e.g 03001234567"
+            android:textColor="@color/black"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:hint="Age in years"
+            android:inputType="number" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_30sdp">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonAddProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add profile" />
+    </LinearLayout>
+
+</ScrollView>
+

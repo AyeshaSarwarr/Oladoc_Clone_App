@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:id="@+id/home"
+    android:background="#AFE6E2E2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Blue Background Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/blue"
+
+            android:padding="16dp">
+
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/searchview_background"
+                android:iconifiedByDefault="false"
+                android:backgroundTint="@color/white"
+                android:queryBackground="@android:color/transparent"
+                android:queryHint="Find Doctors, Specialties, Disease and Hospital..." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <!-- Services Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <!-- Consult Online Now Card -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/home1"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="@string/consult_online_now"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/consult_online_now"
+                        android:gravity="center"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- In-Clinic Appointments Card -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:layout_marginStart="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/home2"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="@string/in_clinic_appointments"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/in_clinic_appointments"
+                        android:gravity="center"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Additional Services Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <!-- Laboratory Tests Card -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/home3"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/lab_tests"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/laboratory_tests"
+                        android:gravity="center"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Procedures & Surgeries Card -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:layout_marginStart="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/home4"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/surgeries"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/procedures_and_surgeries"
+                        android:gravity="center"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Discounted Medicines Card -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:layout_marginStart="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/home5"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/discounted_medicines"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/discounted_medicines"
+                        android:gravity="center"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="391dp"
+            android:layout_height="321dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <!-- Specialists Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/i_am_looking_for"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="25dp"
+                    android:contentDescription="@string/skin_specialist"
+                    android:src="@drawable/home6" />
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="25dp"
+                    android:contentDescription="@string/gynecologist"
+                    android:src="@drawable/home7" />
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="16dp"
+                    android:contentDescription="@string/urologist"
+                    android:src="@drawable/home8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:text="@string/skin_specialistt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/gynecologistt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:text="@string/urologistt" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="25dp"
+                    android:contentDescription="@string/child_specialist"
+                    android:src="@drawable/home9" />
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="25dp"
+                    android:contentDescription="@string/orthopedic_surgeon"
+                    android:src="@drawable/home10" />
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="16dp"
+                    android:contentDescription="@string/consultant_physician"
+                    android:src="@drawable/home11" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:text="@string/childspecialist" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/orthopedic_surgeonn"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/consultant_physiciann"
+                    android:textAlignment="center"
+                    android:contentDescription="@string/consultant_physiciann" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#AFE4DCDC"
+                android:text="@string/all_specializations"
+                android:textColor="@color/blue"
+                app:cornerRadius="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="387dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/latest_on_healthzone"
+                android:textSize="25sp" />
+            <WebView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_90sdp"
+                android:layout_marginStart="@dimen/_60sdp"
+                android:id="@+id/youtube_view"
+                />
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#AFE4DCDC"
+                android:text="@string/all_videos_and_articles"
+                android:textColor="@color/blue"
+                app:cornerRadius="10dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="#F0DFA5"
+
+
+            >
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_marginBottom="20dp"
+    android:layout_marginEnd="90dp"
+    android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_marginStart="20dp"
+                android:layout_width="20dp"
+                android:layout_height="60dp"
+                android:src="@drawable/home13"
+                android:contentDescription="@string/logo"
+                />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                android:text="@string/got_a_health_subsrciption_plan" />
+
+</LinearLayout>
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginStart="20dp"
+                android:text="@string/free_video_consultation_with_top_doctors" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginStart="20dp"
+                android:text="@string/discounts_on_in_clinic_doctor_bookings" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginStart="20dp"
+                android:text="@string/discounts_on_medicine_and_lab_tests" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginStart="20dp"
+                android:text="@string/discounts_on_elective_procedures_and_sugeries" />
+
+            <Button
+                android:layout_marginTop="30dp"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:text="@string/connect_now"
+                android:textColor="@color/white"
+                app:cornerRadius="10dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_5_29_7"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_add_call_24"
+            android:layout_gravity="end"
+            android:background="@drawable/round_background"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/pic"
+            />
+    </LinearLayout>
+</ScrollView>
